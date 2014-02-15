@@ -26,7 +26,7 @@ public class Rectangle extends Polygon {
     }
     @Override
     public String toString(){
-        return "id="+getId()+"  "+getName()+": "+getSide1Name()+"="+getSide1Length()+"  "+getSide2Name()+"="+getSide2Length()+"   "+getSide3Name()+"="+getSide3Length()+"   "+side4Name+"="+side4Length+"  Периметр="+this.doPerimeter()+"  Площадь="+this.doArea();
+        return this.getTime() +"  "+"id="+getId()+"  "+getName()+": "+getSide1Name()+"="+getSide1Length()+"  "+getSide2Name()+"="+getSide2Length()+"   "+getSide3Name()+"="+getSide3Length()+"   "+side4Name+"="+side4Length+"  Периметр="+this.doPerimeter()+"  Площадь="+this.doArea();
     }
     /**
      * Метод для вычисления площади

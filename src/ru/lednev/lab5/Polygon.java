@@ -7,7 +7,10 @@ package ru.lednev.lab5;
 *  @author Lednev D.I.  
 */
 
-
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.text.DecimalFormat;
 public abstract class Polygon implements Perimeter, Area
 {
       private int id;
@@ -27,6 +30,13 @@ public abstract class Polygon implements Perimeter, Area
    
     public String getName() {
         return name;
+    }
+    
+    public String getTime() 
+    {
+	DateFormat dateFormat = new SimpleDateFormat("dd.MM.YYYY HH:mm:ss");
+	Date date = new Date();
+        return dateFormat.format(date);
     }
 
     public void setName(String name) {
